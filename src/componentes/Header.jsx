@@ -1,10 +1,18 @@
-// import PropTypes from 'prop-types'
-function Header() {
+import PropTypes from 'prop-types'
+import Input from './Input';
+function Header({ categories, setCategories }) {
   return (
-    <div className='text-center text-4xl md:text-left md:text-2xl font-bold px-4 py-8 bg-white'>
-      Gif App
+    <div className='flex flex-col sm:flex-row  md:items-center text-center  md:text-left px-4 bg-white'>
+      <h1 className='flex justify-center sm:items-center font-bold text-4xl py-4 md:py-0 md:text-3xl'>
+        Gif App
+      </h1>
+
+      <Input categories={categories} setCategories={setCategories} />
     </div>
   );
 }
-Header.propTypes = {};
+Header.propTypes = {
+  categories: PropTypes.array.isRequired,
+  setCategories: PropTypes.func.isRequired,
+};
 export default Header;

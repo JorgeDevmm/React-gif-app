@@ -1,17 +1,21 @@
 import PropTypes from 'prop-types';
 
-function Listado({ categorias }) {
+function Listado({ categories }) {
   return (
     <div>
       <ol>
-        {categorias.map((categoria) => {
-          return <li className='text-white font-bold' key={categoria}>{categoria}</li>;
+        {categories.map((categorie) => {
+          return (
+            <li className='text-white font-bold' key={categorie}>
+              {categorie}
+            </li>
+          );
         })}
       </ol>
     </div>
   );
 }
 Listado.propTypes = {
-  categorias: PropTypes.array.isRequired,
+  categories: PropTypes.array.isRequired,
 };
 export default Listado;

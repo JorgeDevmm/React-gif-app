@@ -1,22 +1,18 @@
 // import './App.css';
 
 import Header from './componentes/Header';
-import Input from './componentes/Input';
 import Listado from './componentes/Listado';
 import Footer from './componentes/Footer';
 import { useState } from 'react';
 
 function App() {
-  const [categorias, setCategorias] = useState(['Animes',"dragon ball"]);
-
-  console.log(categorias);
-
+  const [categories, setCategories] = useState(['Animes', "dragon ball"]);
+  
   return (
     <>
-      <Header />
+      <Header categories={categories} setCategories={setCategories } />
       <main>
-        <Input />
-        <Listado categorias={categorias} />
+        <Listado categories={categories} />
       </main>
 
       <Footer />
