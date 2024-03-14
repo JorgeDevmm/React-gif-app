@@ -6,12 +6,13 @@ import Footer from './componentes/Footer';
 import { useState } from 'react';
 
 function App() {
-  const [categories, setCategories] = useState(['Animes', "dragon ball"]);
-  
+  const [categories, setCategories] = useState([]);
+
   return (
     <>
-      <Header categories={categories} setCategories={setCategories } />
-      <main>
+      {/* Enviamos los prop hacia header y luego inputs */}
+      <Header categories={categories} setCategories={setCategories} />
+      <main className='mx-20 mt-20'>
         <Listado categories={categories} />
       </main>
 

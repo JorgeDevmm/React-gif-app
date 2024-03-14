@@ -1,18 +1,15 @@
 import PropTypes from 'prop-types';
+import GifGrid from './GifGrid';
 
 function Listado({ categories }) {
   return (
-    <div>
-      <ol>
-        {categories.map((categorie) => {
-          return (
-            <li className='text-white font-bold' key={categorie}>
-              {categorie}
-            </li>
-          );
-        })}
-      </ol>
-    </div>
+    <>
+      {/* iteramos y mostramos el arreglo, usamos la key de la misma categoria previamente validada */}
+      {categories.map((categorie) => (
+        // mandamos la cateogirie y la key
+        <GifGrid key={categorie} categorie={categorie} />
+      ))}
+    </>
   );
 }
 Listado.propTypes = {
