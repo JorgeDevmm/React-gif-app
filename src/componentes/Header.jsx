@@ -15,7 +15,7 @@ function Header({ categories, setCategories }) {
     }
 
     // agregando a categoria lo ingresado lo del inputValue
-    setCategories([...categories, newCategory.toLowerCase()]);
+    setCategories([newCategory.toLowerCase(), ...categories]);
   };
 
   return (
