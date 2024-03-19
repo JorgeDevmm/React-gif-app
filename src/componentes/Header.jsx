@@ -21,7 +21,7 @@ function Header({ categories, setCategories }) {
   return (
     <div className='flex flex-col sm:flex-row  md:items-center text-center  md:text-left px-4 bg-white'>
       <h1 className='flex justify-center sm:items-center font-bold text-4xl py-4 md:py-0 md:text-3xl'>
-        Gif App
+        GIF APP
       </h1>
 
       <AddCategory

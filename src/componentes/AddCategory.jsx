@@ -25,7 +25,7 @@ function AddCategory({ onAddCategory }) {
   return (
     <form
       onSubmit={onSubmit}
-      className='flex justify-between items-center sm:ml-auto bg-[#F1F1F2] my-8 rounded-full '
+      className='flex justify-between items-center sm:ml-auto bg-[#F1F1F2] my-8 rounded-full border-[#202124] border-2'
     >
       <input
         type='text'
@@ -34,7 +34,7 @@ function AddCategory({ onAddCategory }) {
         value={inputValue}
         onChange={(event) => onInputChange(event)}
       />
-      <span className='ml-auto text-[#202124]'>|</span>
+      <span className='ml-auto text-[#202124] font-bold'>|</span>
       {/* boton que hara la busqueda de categoria */}
       <button
         className='bg-red cursor-pointer'
