@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       {/* Enviamos los prop hacia header y luego inputs */}
-      <Header categories={categories} setCategories={setCategories} />
+      <Header className="fixed" categories={categories} setCategories={setCategories} />
       <main className='mx-20 mt-20'>
         <Listado categories={categories} />
       </main>
