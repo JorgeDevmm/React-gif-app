@@ -25,7 +25,7 @@ function AddCategory({ onAddCategory }) {
   return (
     <form
       onSubmit={onSubmit}
-      className='flex justify-between items-center sm:ml-auto bg-[#F1F1F2] my-8 rounded-full border-[#202124] border-2'
+      className='flex justify-between items-center bg-[#F1F1F2] my-8 rounded-full border-[#202124] border-2 w-96'
     >
       <input
         type='text'
