@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// import getGifs from '../helpers/getGifs.js';
 import GifItem from './GifItem.jsx';
 import useFetchGifs from '../hooks/useFetchGifs.js';
 

@@ -5,10 +5,13 @@ function Listado({ categories }) {
   return (
     <>
       {/* iteramos y mostramos el arreglo, usamos la key de la misma categoria previamente validada */}
-      {categories.map((categorie) => (
-        // mandamos la cateogirie y la key
-        <GifGrid key={categorie} categorie={categorie} />
-      ))}
+
+      {
+        categories.map((categorie) => (
+          // mandamos la cateogirie y la key
+          <GifGrid key={categorie} categorie={categorie} />
+        ))
+      }
     </>
   );
 }
